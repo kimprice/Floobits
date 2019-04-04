@@ -166,24 +166,7 @@ public class OutboundRequestHandler {
     public void message(String chatContents) {
         conn.write(new FlooMessage(chatContents));
         // add logging here
-        //String timestamp = Instant.now().toString();
-/*        Long timestamp = Instant.now().toEpochMilli();
-        FlooUserDetail flooUserDetail = API.getUserDetail(context, state);
-        try {
-            // need to define this file writer elsewhere and then add the contents by calling a method
-            //System.out.println("Working Directory = " + System.getProperty("user.dir"));
-            // this file is being written to /Applications/IntelliJ IDEA CE.app/Contents/bin
-            BufferedWriter writer = new BufferedWriter(new FileWriter("actionLogs.txt", true));
-            writer.write("\n" + timestamp + "\t" + flooUserDetail.username + "\t" + chatContents);
-            System.out.println("\n" + timestamp + "\t" + flooUserDetail.username + "\t" + chatContents);
-
-            writer.close(); //need to move this
-        } catch (IOException ex) {
-            System.out.println("caught an IOException");
-
-        }*/
         Log.toTextFile(context, state, LogType.CHAT_MESSAGE, chatContents);
-
     }
 
     public void kick(int userId) {

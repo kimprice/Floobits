@@ -377,12 +377,6 @@ public class InboundRequestHandler {
 
         context.chat(username, msg, messageDate);
         Log.toTextFile(messageDate, username, Log.LogType.CHAT_MESSAGE, msg);
-/*        try {
-            FileWriter writer = new FileWriter("actionLogs.txt");
-            writer.write("\n" + messageDate + "\t" + username + "\t" + msg);
-            System.out.println("\n" + messageDate + "\t" + username + "\t" + msg);
-        } catch (IOException ex) {
-        }*/
     }
 
     void _on_term_stdout(JsonObject jsonObject) {}

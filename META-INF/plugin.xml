@@ -1,0 +1,148 @@
+<idea-plugin version="2" url="https://floobits.com">
+  <id>com.floobits.unique.plugin.id</id>
+  <name>Floobits</name>
+  <version>1.6.7</version>
+  <vendor email="info@floobits.com" url="https://floobits.com">Floobits</vendor>
+
+  <description><![CDATA[
+     Floobits lets you collaborate on code in real-time across multiple text editors and IDEs.<br>
+      You need a Floobits account. Create one at https://floobits.com
+      Features include being able to see other people's cursor and highlights, being able to summon, and also follow edits
+      automatically.
+      ]]></description>
+
+  <change-notes><![CDATA[
+    You can now summon individual users to your cursor position. Just right-click on them in the user list and choose "summon".
+    ]]>
+  </change-notes>
+
+  <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="131"/>
+
+  <!-- please see http://confluence.jetbrains.net/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+       on how to target different products -->
+  <depends>com.intellij.modules.lang</depends>
+
+  <application-components>
+      <component>
+          <implementation-class>floobits.FloobitsApplication</implementation-class>
+      </component>
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+      <component>
+          <implementation-class>floobits.FloobitsPlugin</implementation-class>
+      </component>
+  </project-components>
+
+  <actions>
+      <action id="floobits.actions.JoinWorkspace" class="floobits.actions.JoinWorkspace" text="Join Workspace by URL"
+              description="Join Floobits workspace">
+      </action>
+      <action id="floobits.JoinRecentWorkspace" class="floobits.actions.SelectRecentWorkspace" text="Join Recent Workspace"
+              description="Join RecentFloobits workspace">
+      </action>
+      <action id="floobits.QuickJoinRecentWorkspace" class="floobits.actions.QuickStartJoinRecent" text="Join a Recent Floobits Workspace"
+              icon="/icons/floo.png" description="Join RecentFloobits workspace">
+          <add-to-group group-id="WelcomeScreen.QuickStart" anchor="last"/>
+      </action>
+      <action id="floobits.actions.ShareProjectPrivately" class="floobits.actions.ShareProjectPrivately"
+              text="Share Project Privately" description="This will share the project privately.">
+      </action>
+      <action id="floobits.actions.ShareProject" class="floobits.actions.ShareProject" text="Share Project Publicly"
+              description="Share your current project">
+      </action>
+      <action id="floobits.actions.FollowMode" class="floobits.actions.FollowMode" text="Toggle Follow Mode"
+              description="Follow mode will cause your editor to follow the cursor of everyone in the workspace.">
+      </action>
+      <action id="floobits.actions.FollowUser" class="floobits.actions.FollowUser" text="Follow Selected Users"
+              description="Follow only the cursors and changes of specific users in the workspace.">
+      </action>
+      <action id="floobits.actions.Summon" class="floobits.actions.Summon" text="Summon" description="Summon everyone in the room to your location">
+      </action>
+      <action id="floobits.actions.CompleteSignUp" class="floobits.actions.CompleteSignup" text="Log In to Website"
+              description="If you have never signed up to the main website and created a real account, this step will do it for you. If you have, it does nothing.">
+      </action>
+      <action id="floobits.actions.ClearHighlights" class="floobits.actions.ClearHighlights" text="Clear Highlights"/>
+      <action id="floobits.actions.RequestReview" class="floobits.actions.RequestReview" text="Request Code Review"/>
+      <action id="floobits.actions.ClearPersistentJSON" class="floobits.actions.ClearPersistentJSON" text="Clear Cache"/>
+      <action id="floobits.actions.GoToLastHighlight" class="floobits.actions.GoToLastHighlight" text="Go to last Highlight"/>
+      <action id="floobits.actions.OpenProjectInWorkspace" class="floobits.actions.OpenProjectInWorkspace" text="Join Project's Workspace" description="Open the project in an existing workspace."/>
+      <action id="floobits.actions.LeaveWorkspace" class="floobits.actions.LeaveWorkspace" text="Leave Workspace" description="Leave the current Workspace"/>
+      <action id="floobits.actions.OpenWorkspaceInBrowser" class="floobits.actions.OpenWorkspaceInBrowser" text="Open Workspace in Browser" description="Open the current workspace in your browser"/>
+      <action id="floobits.actions.OpenSettingsInBrowser" class="floobits.actions.OpenSettingsInBrowser" text="Open Settings in Browser" description="Open the current workspace's settings in your browser"/>
+      <action id="floobits.actions.AddToWorkspace" class="floobits.actions.AddToWorkspace" text="Add To Workspace" description="Add file or folders to the Workspace"/>
+      <action id="floobits.actions.DeleteFromWorkspace" class="floobits.actions.DeleteFromWorkspace" text="Remove From Workspace" description="Remove file(s) from workspace"/>
+      <action id="floobits.actions.OpenFloorc" class="floobits.actions.OpenFloorc" text="Open settings (~/.floorc.json)"  description="Open your ~/.floorc.json"/>
+
+      <action id="floobits.actions.RequestEditPermissions" class="floobits.actions.RequestEditPermissions" text="Request Edit Permissions"
+              description="Request edit permissions for a workspace, if you don&#39;t have them already."/>
+
+      <action id="floobits.actions.SubmitIssue" class="floobits.actions.SubmitIssue" text="Report an Issue to Floobits"
+              description="Submit an Issue to Floobits">
+      </action>
+      <action id="floobits.actions.GoToHelp" class="floobits.actions.GoToHelp" text="Get Help with Floobits"
+              description="Get help for Floobits">
+      </action>
+
+      <group id="Floobits-File-Context" text="Floobits" description="Floobits" popup="true" icon="/icons/floo.png">
+          <reference ref="floobits.actions.AddToWorkspace"/>
+          <reference ref="floobits.actions.DeleteFromWorkspace"/>
+          <reference ref="floobits.actions.ShareProject"/>
+          <reference ref="floobits.actions.ShareProjectPrivately"/>
+          <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
+      </group>
+
+
+      <action id="floobits.actions.FloobitsWindow" class="floobits.actions.FloobitsWindow" text="Toggle Floobits Window"
+              description="Toggle Floobits Window" icon="/icons/floo.png">
+          <add-to-group group-id="MainToolBar" anchor="last"/>
+      </action>
+
+      <group id="Floobits" text="Floobits" description="Floobits" popup="true" icon="/icons/floo.png">
+          <reference ref="floobits.actions.FloobitsWindow"/>
+          <separator/>
+          <reference ref="floobits.actions.SubmitIssue"/>
+          <reference ref="floobits.actions.GoToHelp"/>
+          <separator/>
+          <reference ref="floobits.actions.ShareProject"/>
+          <reference ref="floobits.actions.ShareProjectPrivately"/>
+          <separator/>
+          <reference ref="floobits.actions.JoinWorkspace"/>
+          <reference ref="floobits.JoinRecentWorkspace"/>
+          <reference ref="floobits.actions.OpenProjectInWorkspace"/>
+          <separator/>
+          <reference ref="floobits.actions.LeaveWorkspace"/>
+          <separator/>
+          <reference ref="floobits.actions.FollowMode"/>
+          <reference ref="floobits.actions.FollowUser"/>
+          <reference ref="floobits.actions.Summon"/>
+          <reference ref="floobits.actions.ClearHighlights"/>
+          <reference ref="floobits.actions.OpenWorkspaceInBrowser"/>
+          <reference ref="floobits.actions.OpenSettingsInBrowser"/>
+          <action id="floobits.AddToWorkspace2" class="floobits.actions.AddToWorkspace" text="Add To Workspace" description="Add file or folders to the Workspace"/>
+          <action id="floobits.actions.DeleteFromWorkspace2" class="floobits.actions.DeleteFromWorkspace" text="Remove From Workspace" description="Remove file(s) from workspace"/>
+          <separator/>
+          <reference ref="floobits.actions.CompleteSignUp"/>
+          <separator/>
+          <reference ref="floobits.actions.OpenFloorc"/>
+          <reference ref="floobits.actions.RequestEditPermissions"/>
+          <reference ref="floobits.actions.ClearPersistentJSON"/>
+          <add-to-group group-id="ToolsMenu" anchor="first" />
+      </group>
+      <action id="floobits.actions.QuickStartJoin" class="floobits.actions.QuickStartJoin" text="Join a Floobits Workspace" icon="/icons/floo.png">
+          <add-to-group group-id="WelcomeScreen.QuickStart" anchor="last"/>
+      </action>
+      <action id="floobits.actions.QuickStartSubmit" class="floobits.actions.SubmitIssue" text="Report an Issue to Floobits" icon="/icons/floo.png">
+          <add-to-group group-id="WelcomeScreen.QuickStart" anchor="last"/>
+      </action>
+      <action id="floobits.actions.QuickStartHelp" class="floobits.actions.GoToHelp" text="Get Help With Floobits" icon="/icons/floo.png">
+          <add-to-group group-id="WelcomeScreen.QuickStart" anchor="last"/>
+      </action>
+  </actions>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+</idea-plugin>

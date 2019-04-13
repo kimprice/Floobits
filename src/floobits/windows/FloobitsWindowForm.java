@@ -5,6 +5,7 @@ import com.intellij.openapi.actionSystem.*;
 import com.intellij.openapi.editor.markup.RangeHighlighter;
 import com.intellij.ui.JBColor;
 import com.intellij.ui.components.JBScrollPane;
+import floobits.Log;
 import floobits.actions.*;
 import floobits.common.interfaces.IContext;
 import floobits.common.protocol.FlooUser;
@@ -275,11 +276,15 @@ public class FloobitsWindowForm {
     public void statusMessage(String message) {
         String messageFormat = "%s<b><i><span style=\"color:green\">%s</span></i></b><br/>";
         addMessage(String.format(messageFormat, stampMessage("*status*", null), message));
+        // add logging here
+        Log.toTextFile(context, context.getFlooHandler().state, Log.LogType.STATUS_MESSAGE, message);
     }
 
     public void errorMessage(String message) {
         String messageFormat = "%s<b><i><span style=\"color:red\">%s</span></i></b><br/>";
         addMessage(String.format(messageFormat, stampMessage("*error*", null), message));
+        // add logging here
+        Log.toTextFile(context, context.getFlooHandler().state, Log.LogType.ERROR_MESSAGE, message);
     }
 
     public void chatMessage(String username, String msg, Date messageDate) {

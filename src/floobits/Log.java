@@ -14,7 +14,7 @@ import java.util.Date;
 public class Log {
 
     public enum LogType {
-        CHAT_MESSAGE, UI_ACTION
+        CHAT_MESSAGE, UI_ACTION, STATUS_MESSAGE, ERROR_MESSAGE
     }
 
     public static void toTextFile(IContext context, FloobitsState state, LogType type, String message) {

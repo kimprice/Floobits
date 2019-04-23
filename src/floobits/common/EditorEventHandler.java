@@ -1,5 +1,6 @@
 package floobits.common;
 
+import floobits.Log;
 import floobits.common.interfaces.IContext;
 import floobits.common.interfaces.IDoc;
 import floobits.common.interfaces.IFactory;
@@ -117,6 +118,8 @@ public class EditorEventHandler {
                 continue;
             }
             outbound.deleteBuf(buf, false);
+            // add logging here
+            Log.toTextFile(context, state, Log.LogType.UI_ACTION, "Deleted file from workspace: " + path);
         }
     }
 

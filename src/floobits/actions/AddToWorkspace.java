@@ -52,7 +52,7 @@ public class AddToWorkspace extends IsJoinedAction {
             editorEventHandler.upload(virtualFile);
         }
 
-        // add logging here
-        Log.toTextFile(context, editorEventHandler.state, Log.LogType.UI_ACTION, "Added Files to the Workspace (To Do: add file names)");
+        // add logging here - commented out because it is already logged with status messages
+        // Log.toTextFile(context, editorEventHandler.state, Log.LogType.UI_ACTION, "Added Files to the Workspace (To Do: add file names)");
     }
 }

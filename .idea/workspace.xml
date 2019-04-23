@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="501d4dd3-53d6-4173-82c2-1e4405e33a50" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/floobits/actions/FloobitsWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/floobits/actions/FloobitsWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/floobits/common/EditorEventHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/floobits/common/EditorEventHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/floobits/actions/AddToWorkspace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/floobits/actions/AddToWorkspace.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/out-test/" />
@@ -16,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/floobits/actions/DeleteFromWorkspace.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/floobits/actions/AddToWorkspace.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+            <state relative-caret-position="479">
+              <caret line="55" column="68" lean-forward="true" selection-start-line="55" selection-start-column="68" selection-end-line="55" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -29,13 +28,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/floobits/actions/AddToWorkspace.java">
+        <entry file="file://$PROJECT_DIR$/src/floobits/actions/CanFloobits.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="51" column="51" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="524">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
             </state>
           </provider>
         </entry>
@@ -62,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/floobits/common/EditorEventHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="130" column="38" selection-start-line="130" selection-start-column="38" selection-end-line="130" selection-end-column="38" />
+            <state relative-caret-position="2027">
+              <caret line="163" column="41" lean-forward="true" selection-start-line="163" selection-start-column="41" selection-end-line="163" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -173,7 +169,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/floobits/actions/ClearHighlights.java" />
-        <option value="$PROJECT_DIR$/src/floobits/actions/AddToWorkspace.java" />
         <option value="$PROJECT_DIR$/src/floobits/common/InboundRequestHandler.java" />
         <option value="$PROJECT_DIR$/src/floobits/common/OutboundRequestHandler.java" />
         <option value="$PROJECT_DIR$/src/floobits/Log.java" />
@@ -181,6 +176,7 @@
         <option value="$PROJECT_DIR$/src/floobits/actions/DeleteFromWorkspace.java" />
         <option value="$PROJECT_DIR$/src/floobits/common/EditorEventHandler.java" />
         <option value="$PROJECT_DIR$/src/floobits/actions/FloobitsWindow.java" />
+        <option value="$PROJECT_DIR$/src/floobits/actions/AddToWorkspace.java" />
       </list>
     </option>
   </component>
@@ -192,8 +188,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1625" />
-    <option name="y" value="22" />
+    <option name="x" value="1417" />
+    <option name="y" value="-59" />
     <option name="width" value="1280" />
     <option name="height" value="753" />
   </component>
@@ -357,7 +353,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1625" y="22" width="1280" height="753" extended-state="0" />
+    <frame x="1417" y="-59" width="1280" height="753" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26655897" />
@@ -715,13 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/floobits/actions/CanFloobits.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/floobits/actions/ClearPersistentJSON.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-52">
@@ -760,16 +749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="22" column="50" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/floobits/actions/AddToWorkspace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="51" column="51" selection-start-line="51" selection-start-column="51" selection-end-line="51" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -837,8 +816,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/floobits/common/EditorEventHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="130" column="38" selection-start-line="130" selection-start-column="38" selection-end-line="130" selection-end-column="38" />
+        <state relative-caret-position="2027">
+          <caret line="163" column="41" lean-forward="true" selection-start-line="163" selection-start-column="41" selection-end-line="163" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/floobits/actions/CanFloobits.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/floobits/actions/AddToWorkspace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="55" column="68" lean-forward="true" selection-start-line="55" selection-start-column="68" selection-end-line="55" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

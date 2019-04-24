@@ -48,4 +48,19 @@ public class Log {
             System.out.println("caught an IOException");
         }
     }
+    // call this function if unable to get username, context, or state
+    public static void toTextFile(LogType type, String message) {
+        Long timestamp = Instant.now().toEpochMilli();
+        Date date = new Date();
+        String sep = " *|* ";
+        try {
+            // this file is being written to /Applications/IntelliJ IDEA CE.app/Contents/bin
+            BufferedWriter writer = new BufferedWriter(new FileWriter("actionLogs.txt", true));
+            writer.write("\n" + timestamp + sep + date + sep + type.name() + sep + "Anonymous" + sep + message);
+            System.out.println("\n" + timestamp + sep + date + sep + type.name() + sep + "Anonymous" + sep + message);
+            writer.close(); //need to move this
+        } catch (IOException ex) {
+            System.out.println("caught an IOException");
+        }
+    }
 }

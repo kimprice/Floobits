@@ -13,7 +13,12 @@ public class ClearHighlights extends RequiresAccountAction {
             floobitsPlugin.context.iFactory.clearHighlights();
             // add logging here
             // if this works the way I think it should then we can get rid of one parameter
-            Log.toTextFile(floobitsPlugin.context, floobitsPlugin.context.getFlooHandler().state, Log.LogType.UI_ACTION, "Cleared highlights" );
+            try {
+                Log.toTextFile(floobitsPlugin.context, floobitsPlugin.context.getFlooHandler().state, Log.LogType.UI_ACTION, "Cleared highlights" );
+            } catch (NullPointerException ex) {
+                Log.toTextFile(Log.LogType.UI_ACTION, "Cleared highlights" );
+            }
+
         }
     }
 }

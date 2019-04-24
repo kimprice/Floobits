@@ -5,9 +5,11 @@ import com.intellij.openapi.actionSystem.PlatformDataKeys;
 import com.intellij.openapi.editor.Document;
 import com.intellij.openapi.editor.Editor;
 import floobits.FloobitsPlugin;
+import floobits.Log;
 import floobits.common.EditorEventHandler;
 import floobits.impl.ContextImpl;
 import floobits.impl.FactoryImpl;
+import java.util.Date;
 
 
 public class Summon extends IsJoinedAction {
@@ -15,6 +17,11 @@ public class Summon extends IsJoinedAction {
     @Override
     public void actionPerformed(AnActionEvent e, final EditorEventHandler editorEventHandler, FloobitsPlugin floobitsPlugin) {
         final Editor editor = PlatformDataKeys.EDITOR.getData(e.getDataContext());
+        try {
+            Log.toTextFile(floobitsPlugin.context, floobitsPlugin.context.getFlooHandler().state, Log.LogType.UI_ACTION, "Summoned collaborators" );
+        } catch (NullPointerException ex) {
+            Log.toTextFile(Log.LogType.UI_ACTION, "Summoned collaborators" );
+        }
         summon(editor, editorEventHandler, null, floobitsPlugin.context);
     }
 

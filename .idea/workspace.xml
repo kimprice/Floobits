@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="501d4dd3-53d6-4173-82c2-1e4405e33a50" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/floobits/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/floobits/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/floobits/windows/FloobitsWindowForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/floobits/windows/FloobitsWindowForm.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/out-test/" />
@@ -14,15 +14,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/floobits/actions/ShareProjectPrivately.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/floobits/actions/SubmitIssue.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -57,14 +48,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/floobits/Log.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+            <state relative-caret-position="165">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/floobits/common/interfaces/IContext.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3083">
+              <caret line="312" column="29" selection-start-line="312" selection-start-column="25" selection-end-line="312" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/floobits/windows/FloobitsWindowForm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="297" column="5" lean-forward="true" selection-start-line="297" selection-start-column="5" selection-end-line="297" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -85,7 +94,7 @@
         <entry file="file://$PROJECT_DIR$/src/floobits/actions/Summon.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="307">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,19 +106,7 @@
         <entry file="file://$PROJECT_DIR$/src/floobits/actions/FloobitsWindow.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/floobits/actions/ShareProject.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -175,7 +172,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/floobits/common/InboundRequestHandler.java" />
         <option value="$PROJECT_DIR$/src/floobits/common/OutboundRequestHandler.java" />
-        <option value="$PROJECT_DIR$/src/floobits/windows/FloobitsWindowForm.java" />
         <option value="$PROJECT_DIR$/src/floobits/actions/DeleteFromWorkspace.java" />
         <option value="$PROJECT_DIR$/src/floobits/common/EditorEventHandler.java" />
         <option value="$PROJECT_DIR$/src/floobits/actions/AddToWorkspace.java" />
@@ -183,6 +179,7 @@
         <option value="$PROJECT_DIR$/src/floobits/actions/FloobitsWindow.java" />
         <option value="$PROJECT_DIR$/src/floobits/actions/Summon.java" />
         <option value="$PROJECT_DIR$/src/floobits/Log.java" />
+        <option value="$PROJECT_DIR$/src/floobits/windows/FloobitsWindowForm.java" />
       </list>
     </option>
   </component>
@@ -196,7 +193,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="1348" />
     <option name="y" value="-34" />
-    <option name="width" value="1280" />
+    <option name="width" value="1265" />
     <option name="height" value="753" />
   </component>
   <component name="ProjectView">
@@ -241,7 +238,30 @@
               <item name="Floobits" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="floobits" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="intellij-plugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Floobits" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="floobits" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="intellij-plugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Floobits" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="floobits" type="462c0819:PsiDirectoryNode" />
+              <item name="windows" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="intellij-plugin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Floobits" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="floobits" type="462c0819:PsiDirectoryNode" />
+              <item name="windows" type="462c0819:PsiDirectoryNode" />
+              <item name="FloobitsWindowForm" type="e9f4de52:FormNode" />
             </path>
           </expand>
           <select />
@@ -253,7 +273,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556130879747" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556135535992" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -359,10 +379,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1348" y="-34" width="1280" height="753" extended-state="0" />
+    <frame x="1348" y="-34" width="1265" height="753" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27059773" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2739166" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -371,7 +391,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32977098" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49965635" visible="true" weight="0.32829046" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49965635" visible="true" weight="0.32829046" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -536,13 +556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/floobits/common/interfaces/IContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4185">
-          <caret line="312" column="29" selection-start-line="312" selection-start-column="25" selection-end-line="312" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/floobits/common/Settings.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -557,13 +570,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-788">
           <caret line="24" column="37" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/floobits/windows/FloobitsWindowForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="170" column="20" lean-forward="true" selection-start-line="170" selection-start-column="20" selection-end-line="170" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -819,7 +825,7 @@
     <entry file="file://$PROJECT_DIR$/src/floobits/actions/FloobitsWindow.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
@@ -836,7 +842,7 @@
     <entry file="file://$PROJECT_DIR$/src/floobits/actions/Summon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="307">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -845,11 +851,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/floobits/Log.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+        <state relative-caret-position="165">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/floobits/common/interfaces/IContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3083">
+          <caret line="312" column="29" selection-start-line="312" selection-start-column="25" selection-end-line="312" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/floobits/windows/FloobitsWindowForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="297" column="5" lean-forward="true" selection-start-line="297" selection-start-column="5" selection-end-line="297" selection-end-column="5" />
         </state>
       </provider>
     </entry>

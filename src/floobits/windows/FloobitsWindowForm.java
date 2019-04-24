@@ -277,14 +277,24 @@ public class FloobitsWindowForm {
         String messageFormat = "%s<b><i><span style=\"color:green\">%s</span></i></b><br/>";
         addMessage(String.format(messageFormat, stampMessage("*status*", null), message));
         // add logging here
-        Log.toTextFile(context, context.getFlooHandler().state, Log.LogType.STATUS_MESSAGE, message);
+        try {
+            Log.toTextFile(context, context.getFlooHandler().state, Log.LogType.STATUS_MESSAGE, message);
+        } catch (NullPointerException ex) {
+            Log.toTextFile(Log.LogType.STATUS_MESSAGE, message); // logs anonymously if there is no state info
+        }
+
     }
 
     public void errorMessage(String message) {
         String messageFormat = "%s<b><i><span style=\"color:red\">%s</span></i></b><br/>";
         addMessage(String.format(messageFormat, stampMessage("*error*", null), message));
         // add logging here
-        Log.toTextFile(context, context.getFlooHandler().state, Log.LogType.ERROR_MESSAGE, message);
+        try {
+            Log.toTextFile(context, context.getFlooHandler().state, Log.LogType.ERROR_MESSAGE, message);
+        } catch (NullPointerException ex) {
+            Log.toTextFile(Log.LogType.ERROR_MESSAGE, message); // logs anonymously if there is no state info
+        }
+
     }
 
     public void chatMessage(String username, String msg, Date messageDate) {

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="501d4dd3-53d6-4173-82c2-1e4405e33a50" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/floobits/actions/Summon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/floobits/actions/Summon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/floobits/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/floobits/Log.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/out-test/" />
@@ -57,11 +57,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/floobits/Log.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="277">
+              <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -78,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/floobits/actions/Summon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            <state relative-caret-position="307">
+              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -176,10 +179,10 @@
         <option value="$PROJECT_DIR$/src/floobits/actions/DeleteFromWorkspace.java" />
         <option value="$PROJECT_DIR$/src/floobits/common/EditorEventHandler.java" />
         <option value="$PROJECT_DIR$/src/floobits/actions/AddToWorkspace.java" />
-        <option value="$PROJECT_DIR$/src/floobits/Log.java" />
         <option value="$PROJECT_DIR$/src/floobits/actions/ClearHighlights.java" />
         <option value="$PROJECT_DIR$/src/floobits/actions/FloobitsWindow.java" />
         <option value="$PROJECT_DIR$/src/floobits/actions/Summon.java" />
+        <option value="$PROJECT_DIR$/src/floobits/Log.java" />
       </list>
     </option>
   </component>
@@ -250,7 +253,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556130599533" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556130879747" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -820,13 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/floobits/Log.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="11" selection-start-line="11" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/floobits/actions/ClearHighlights.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -839,8 +835,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/floobits/actions/Summon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="307">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/floobits/Log.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="64" column="5" lean-forward="true" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

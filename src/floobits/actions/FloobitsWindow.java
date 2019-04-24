@@ -13,7 +13,11 @@ public class FloobitsWindow extends AnAction {
         if (floobitsPlugin != null) {
             floobitsPlugin.context.toggleFloobitsWindow();
             // add logging here - causes NullPointerException if not connected to a session, so only log when connected
-            Log.toTextFile(floobitsPlugin.context, floobitsPlugin.context.getFlooHandler().state, Log.LogType.UI_ACTION, "Toggled Floobits Window");
+            try {
+                Log.toTextFile(floobitsPlugin.context, floobitsPlugin.context.getFlooHandler().state, Log.LogType.UI_ACTION, "Toggled Floobits Window");
+            } catch (NullPointerException ex) { // logs anonymously if unable to access state
+                Log.toTextFile(Log.LogType.UI_ACTION, "Toggled Floobits Window");
+            }
         }
     }
 }
